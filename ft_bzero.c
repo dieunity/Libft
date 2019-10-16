@@ -6,14 +6,14 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 19:43:01 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/09/30 22:18:22 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/14 23:15:50 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** writes zeros to a byte stirng. Uses memset to do so :) 
+** writes zeros to a byte stirng. Uses memset to do so :)
 */
 
 void	ft_bzero(void *s, size_t n)

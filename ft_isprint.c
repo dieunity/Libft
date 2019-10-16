@@ -6,11 +6,13 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 18:39:12 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/09/30 19:00:46 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/16 01:24:21 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
-	return(32 <= c && c <= 126);
+	return (32 <= c && c <= 126);
 }

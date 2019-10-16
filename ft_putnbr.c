@@ -6,12 +6,13 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 01:10:24 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/09/28 17:59:27 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/16 00:09:42 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void    ft_putnbr (int nb)
+
+void	ft_putnbr(int nb)
 {
-    ft_putnbr_fd(nb, 1);
+	ft_putnbr_fd(nb, 1);
 }

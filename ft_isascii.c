@@ -6,9 +6,11 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/30 18:37:50 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/09/30 18:39:46 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/16 01:24:03 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

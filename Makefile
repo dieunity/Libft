@@ -6,7 +6,7 @@
 #    By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/23 21:53:29 by dihuynh           #+#    #+#              #
-#    Updated: 2019/09/27 23:54:45 by dihuynh          ###   ########.fr        #
+#    Updated: 2019/10/16 02:03:31 by dihuynh          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,8 +71,12 @@ SRC = 	ft_atoi.c \
 		ft_lstdel.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
-		ft_lstmap.c
-
+		ft_lstmap.c \
+		ft_iswhitespace.c \
+		ft_isotherwhitespace.c \
+		ft_strwhitespace.c \
+		ft_intlen.c \
+		
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

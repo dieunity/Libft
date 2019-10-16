@@ -6,15 +6,16 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/29 23:46:04 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/09/29 23:48:45 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/06 22:19:18 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	ft_strclr(char *s)
 {
-	while (*s)
+	if (s)
 	{
-		*s = '\0';
-		s++;
+		ft_bzero(s, ft_strlen(s));
 	}
 }
