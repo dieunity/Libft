@@ -6,7 +6,7 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:46:07 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/10/15 23:40:16 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/20 00:44:07 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if (!*s1 || !*s2)
+	if (!s1 || !s2)
 		return (-1);
 	if (ft_strncmp(s1, s2, n))
 		return (0);

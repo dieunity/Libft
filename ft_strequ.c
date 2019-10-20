@@ -6,7 +6,7 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:46:07 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/10/15 23:39:46 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/20 00:42:55 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	if (!*s1 || !*s2)
-		return (-1);
+	if (!s1 || !s2)
+		return (0);
 	if (ft_strcmp(s1, s2))
 		return (0);
 	return (1);
