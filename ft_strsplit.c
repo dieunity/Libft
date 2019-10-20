@@ -6,7 +6,7 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:46:07 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/10/16 00:52:30 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/20 00:50:27 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	**ft_strsplit(char const *s, char c)
 	i = -1;
 	index = 0;
 	start = 0;
-	while (s[i++])
+	while (s[++i])
 	{
 		if (s[i] == c && flag)
 			new[index++] = ft_strsub(s, start, i - start);
