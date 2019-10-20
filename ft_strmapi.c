@@ -6,7 +6,7 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/14 17:46:07 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/10/16 01:41:16 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/19 22:47:20 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,15 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*new;
 
 	i = 0;
-	if (f && s)
+	if (!f || !s)
+		return (NULL);
+	if (!(new = ft_strnew(ft_strlen(s))))
+		return (NULL);
+	ft_strcpy(new, s);
+	while (new[i])
 	{
-		if (!(new = ft_strnew(ft_strlen(s))))
-			return (NULL);
-		ft_strcpy(new, s);
-		while (new[i])
-		{
-			new[i] = f(i, new[i]);
-			i++;
-		}
+		new[i] = f(i, new[i]);
+		i++;
 	}
-	return (NULL);
+	return (new);
 }
