@@ -6,7 +6,7 @@
 /*   By: dihuynh <dihuynh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/13 19:28:38 by dihuynh           #+#    #+#             */
-/*   Updated: 2019/10/13 20:56:03 by dihuynh          ###   ########.fr       */
+/*   Updated: 2019/10/19 18:55:53 by dihuynh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*(d + i) = *(s + i);
 			i++;
 		}
-	if (d < s)
+	if (d > s)
 		while (len > 0)
 		{
 			len--;
